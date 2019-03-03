@@ -1,0 +1,42 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+apply from: "config.gradle"
+
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+
+        mavenCentral()// ShortcutBadger 需要
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath 'com.tencent.bugly:symtabfileuploader:latest.release'
+        //方法数统计
+        classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:0.8.2'
+        // 微信资源混淆
+        classpath 'com.tencent.mm:AndResGuard-gradle-plugin:1.2.12'
+        // kotlin使用
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.41"
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }//https://github.com/chrisbanes/PhotoView
+        google()
+        mavenCentral()// kotlin使用  // ShortcutBadger 需要
+        maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local/' }//permissions
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

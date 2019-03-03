@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    skin:enable="true"
+    android:background="@color/bg_color_white">
+
+        <com.zh.xplan.ui.view.pulltorefresh.customheader.PullToRefreshLayout
+            android:id="@+id/rotate_header_list_view_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/titlebar"
+            android:background="@color/black_10"
+            cube_ptr:ptr_duration_to_close="200"
+            cube_ptr:ptr_duration_to_close_header="400"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_pull_to_fresh="false"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="1.0"
+            cube_ptr:ptr_resistance="2.7">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                skin:enable="true"
+                skin:clearRecyclerView="true"
+                android:scrollbars="none" />
+        </com.zh.xplan.ui.view.pulltorefresh.customheader.PullToRefreshLayout>
+
+</RelativeLayout>

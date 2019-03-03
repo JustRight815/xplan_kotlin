@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll_content"
+        android:orientation="vertical">
+
+        <com.zh.xplan.ui.menutoutiao.view.TipView
+            android:id="@+id/tip_view"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            app:tipBackgroundColor="#D5E8F6"
+            app:tipText="网络不可用"
+            app:tipTextColor="#4592C6"
+            app:tipTextSize="14sp"
+            >
+        </com.zh.xplan.ui.menutoutiao.view.TipView>
+
+        <com.zh.xplan.ui.view.pulltorefresh.customheader.PullToRefreshLayout
+            android:id="@+id/rotate_header_list_view_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <com.zh.xplan.ui.menutoutiao.view.PowerfulRecyclerView
+                android:id="@+id/rv_news"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:dividerMarginLeft="10dp"
+                app:dividerMarginRight="10dp"
+                app:dividerColor="@color/divider"
+                app:dividerSize="0.5dp"
+                />
+
+        </com.zh.xplan.ui.view.pulltorefresh.customheader.PullToRefreshLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_top"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/to_top"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>

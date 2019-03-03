@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    skin:enable="true"
+    android:background="@color/colorPrimaryTrue">
+
+    <RelativeLayout 
+        android:id="@+id/title_left_back_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        >
+        <ImageView
+        android:id="@+id/title_left_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+         />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_middle_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:maxWidth="224dp"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:visibility="gone" />
+       
+    <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dip"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_online_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rb_bg_01"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="6dip"
+                android:paddingTop="6dip"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:text="在线视频"
+                android:textColor="@color/title_text_sel"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_local_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rb_bg_02"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="6dip"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:paddingTop="6dip"
+                android:text="本地视频"
+                android:textColor="@color/title_text_sel"
+                android:textSize="14sp" />
+        </RadioGroup>
+    
+    <TextView
+        android:id="@+id/title_right_textview"
+        android:layout_toLeftOf="@id/title_right_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingRight="10dp"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+         />
+
+    <ImageView
+        android:id="@+id/iv_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:paddingRight="5dp"
+        android:paddingTop="8dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/camera_switch"
+         />
+
+</RelativeLayout>

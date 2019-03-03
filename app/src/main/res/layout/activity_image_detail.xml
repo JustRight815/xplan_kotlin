@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <View
+        android:id="@+id/blackView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:id="@+id/rl_base_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="24dp">
+
+        <!--android:background="@android:color/black"-->
+        <com.zh.xplan.ui.view.UpDownHideLayout
+            android:id="@+id/swipableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.zh.xplan.ui.imagedetailactivity.HackyViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.zh.xplan.ui.view.UpDownHideLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="#22000000"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/introduction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:padding="10dp"
+                android:text="图片文字"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

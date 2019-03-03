@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@android:color/white"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    >
+
+    <TextView
+        android:id="@+id/title_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:text="公告:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+
+    <com.zh.xplan.ui.view.viewswitcher.UpDownViewSwitcher
+        android:layout_toRightOf="@+id/title_img"
+        android:layout_toLeftOf="@+id/more_ll"
+        android:id="@+id/home_view_switcher"
+        android:layout_centerVertical="true"
+        app:animator_duration="400"
+        app:switch_duration="3000"
+        app:up_to_down="false"
+        app:animator_translate_distance="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/more_ll"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <View
+            android:layout_margin="5dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/lineColor"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多"
+            android:textColor="@color/black_font"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_color_black_night">#AAAAAA</color>
+    <color name="bg_color_white_night">#555555</color>
+
+    <color name="bg_img_transparent_night">#AAAAAA</color>
+    <color name="lightgray_night">#555555</color>
+
+    <!-- 底部菜单文字颜色-->
+    <color name="menu_select_text_color_night">#AAAAAA</color>
+    <color name="menu_unSelect_text_color_night">#AAAAAA</color>
+    <color name="bottom_menu_line_night">#888888</color>
+
+    <color name="colorPrimaryDark_night">#555555</color>
+    <color name="colorPrimaryTrue_night">#555555</color><!-- titlebar 颜色-->
+
+
+</resources>

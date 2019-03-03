@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/webviewLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="10dp"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    skin:enable="true"
+    android:orientation="vertical">
+</LinearLayout>

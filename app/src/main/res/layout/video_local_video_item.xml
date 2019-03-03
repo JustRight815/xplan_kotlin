@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    skin:enable="true"
+    >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        skin:enable="true"
+        skin:drawShadow="@color/bg_img_transparent"/>
+
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_toRightOf="@id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" 
+        android:text="名称"
+        skin:enable="true"
+        android:textColor="@color/text_color_black"
+        android:lines="2"
+        android:textSize="14sp"/>
+   <TextView
+        android:id="@+id/duration"
+        android:layout_toRightOf="@id/image"
+        android:layout_alignBottom="@id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:text="01:30"
+       skin:enable="true"
+       android:textColor="@color/text_color_black"
+        android:textSize="12sp"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#22000000"/>
+</RelativeLayout>

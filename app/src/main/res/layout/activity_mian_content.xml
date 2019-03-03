@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    skin:enable="true"
+    >
+    <FrameLayout
+        android:id="@+id/id_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        skin:enable="true"
+        android:background="@color/bottom_menu_line" />
+
+    <com.module.common.view.bottombar.BottomBar
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        skin:enable="true"
+        android:background="@color/bg_color_white"
+        >
+
+        <com.module.common.view.bottombar.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@drawable/menu_pic"
+            app:iconSelected="@drawable/menu_pic_pre"
+            app:itemText="图片"
+            skin:enable="true"
+            app:textColorNormal="@color/menu_unSelect_text_color"
+            app:textColorSelected="@color/menu_select_text_color"
+            app:itemTextSize="10sp"
+            app:itemMarginTop="0dp"
+            app:openTouchBg="false"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+
+        <com.module.common.view.bottombar.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@drawable/menu_video"
+            app:iconSelected="@drawable/menu_video_pre"
+            app:itemText="视频"
+            skin:enable="true"
+            app:textColorNormal="@color/menu_unSelect_text_color"
+            app:textColorSelected="@color/menu_select_text_color"
+            app:itemTextSize="10sp"
+            app:itemMarginTop="0dp"
+            app:openTouchBg="false"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+
+
+        <com.module.common.view.bottombar.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@drawable/menu_news"
+            app:iconSelected="@drawable/menu_news_pre"
+            app:itemText="头条"
+            skin:enable="true"
+            app:textColorNormal="@color/menu_unSelect_text_color"
+            app:textColorSelected="@color/menu_select_text_color"
+            app:itemTextSize="10sp"
+            app:itemMarginTop="0dp"
+            app:openTouchBg="false"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+
+        <com.module.common.view.bottombar.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@drawable/menu_my"
+            app:iconSelected="@drawable/menu_my_pre"
+            app:itemText="设置"
+            skin:enable="true"
+            app:textColorNormal="@color/menu_unSelect_text_color"
+            app:textColorSelected="@color/menu_select_text_color"
+            app:itemTextSize="10sp"
+            app:itemMarginTop="0dp"
+            app:openTouchBg="false"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+
+    </com.module.common.view.bottombar.BottomBar>
+</LinearLayout>

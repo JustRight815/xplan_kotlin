@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_from_camera"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" 
+        android:background="@drawable/btn_bottom_selector"
+        android:clickable="true"
+        >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="拍照"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_from_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical"
+        android:background="@drawable/btn_bottom_selector"
+        android:clickable="true"
+         >
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="从相册中选择"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+</LinearLayout>

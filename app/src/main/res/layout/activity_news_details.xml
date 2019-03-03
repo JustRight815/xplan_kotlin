@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryTrue"
+        >
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/title_bar_back_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/title_bar_back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:padding="13dp"
+                android:src="@drawable/selector_titlebar_back"
+                android:scaleType="center"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="match_parent"
+                android:background="@color/title_bar_line"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/title_bar_colse"
+            android:layout_toRightOf="@+id/title_bar_back_layout"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/title_bar_colse"
+            android:scaleType="center"
+            />
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_toRightOf="@id/title_bar_colse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:maxWidth="16dp"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:maxEms="10"
+            android:maxLines="1"
+            tools:text="标题"
+            android:ellipsize="end"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/title_bar_share"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/title_bar_more"
+            android:scaleType="center"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/loading_view"
+        layout ="@layout/stateview_loading_view" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp">
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/common_text_color"
+                android:textSize="22sp"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                />
+            <LinearLayout
+                android:id="@+id/ll_webview_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+            </LinearLayout>
+
+            <!--<com.tencent.smtt.sdk.WebView-->
+                <!--android:id="@+id/wv_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"/>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,227 @@
+{
+    "code": "0",
+    "itemInfoList": [
+        {
+            "itemType": "topBanner",
+            "module": "topBanner",
+            "itemContentList": [
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s720x322_jfs/t4903/41/12296166/85214/15205dd6/58d92373N127109d8.jpg!q70.jpg",
+                    "clickUrl": "男装超级品牌类日"
+                },
+                {
+                    "imageUrl": "https://img1.360buyimg.com/da/jfs/t4309/113/2596274814/85129/a59c5f5e/58d4762cN72d7dd75.jpg",
+                    "clickUrl": "京东春茶季"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s720x322_jfs/t4675/88/704144946/137165/bbbe8a4e/58d3a160N621fc59c.jpg!q70.jpg",
+                    "clickUrl": "装出新高度"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s720x322_jfs/t4627/177/812580410/198036/24a79c26/58d4f1e9N5b9fc5ee.jpg!q70.jpg",
+                    "clickUrl": "宝宝出行利器"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s720x322_jfs/t3097/241/9768114398/78418/47e4335e/58d8a637N6f178fbd.jpg!q70.jpg",
+                    "clickUrl": "慕尼黑新品上市"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s720x322_jfs/t4282/364/2687292678/87315/e4311cd0/58d4d923N24a2f5eb.jpg!q70.jpg",
+                    "clickUrl": "空调让你百试不爽"
+                },
+                {
+                    "imageUrl": "https://img1.360buyimg.com/da/jfs/t4162/171/1874609280/92523/a1206b3f/58c7a832Nc8582e81.jpg",
+                    "clickUrl": "奥妙全新上市"
+                },
+                {
+                    "imageUrl": "https://img1.360buyimg.com/da/jfs/t4387/338/1185667042/56822/bcd7fc3d/58d9e139Nadf09c53.jpg",
+                    "clickUrl": "吸尘品类直降"
+                }
+            ]
+        },
+        {
+            "itemType": "iconList",
+            "module": "iconList",
+            "itemContentList": [
+                {
+                    "imageUrl": "ic_category_0",
+                    "clickUrl": "美食",
+                    "itemTitle": "美食"
+                },
+                {
+                    "imageUrl": "ic_category_1",
+                    "clickUrl": "电影",
+                    "itemTitle": "电影"
+                },
+                {
+                    "imageUrl": "ic_category_2",
+                    "clickUrl": "酒店住宿",
+                    "itemTitle": "酒店住宿"
+                },
+                {
+                    "imageUrl": "ic_category_3",
+                    "clickUrl": "生活服务",
+                    "itemTitle": "生活服务"
+                 },
+                {
+                    "imageUrl": "ic_category_4",
+                    "clickUrl": "KTV",
+                    "itemTitle": "KTV"
+                },
+                 {
+                     "imageUrl": "ic_category_5",
+                     "clickUrl": "旅游",
+                     "itemTitle": "旅游"
+                 },
+                  {
+                      "imageUrl": "ic_category_6",
+                      "clickUrl": "学习培训",
+                      "itemTitle": "学习培训"
+                  },
+                   {
+                       "imageUrl": "ic_category_7",
+                       "clickUrl": "汽车服务",
+                       "itemTitle": "汽车服务"
+                   },
+                   {
+                       "imageUrl": "ic_category_8",
+                       "clickUrl": "摄影写真",
+                       "itemTitle": "摄影写真"
+                   },
+                   {
+                       "imageUrl": "ic_category_10",
+                       "clickUrl": "休闲娱乐",
+                       "itemTitle": "休闲娱乐"
+                    },
+                   {
+                       "imageUrl": "ic_category_11",
+                       "clickUrl": "丽人",
+                       "itemTitle": "丽人"
+                   },
+                    {
+                        "imageUrl": "ic_category_12",
+                        "clickUrl": "运动健身",
+                        "itemTitle": "运动健身"
+                    },
+                     {
+                         "imageUrl": "ic_category_13",
+                         "clickUrl": "大保健",
+                         "itemTitle": "大保健"
+                     },
+                     {
+                         "imageUrl": "ic_category_14",
+                         "clickUrl": "团购",
+                         "itemTitle": "团购"
+                     },
+                      {
+                          "imageUrl": "ic_category_16",
+                          "clickUrl": "景点",
+                          "itemTitle": "景点"
+                      },
+                       {
+                           "imageUrl": "ic_category_15",
+                           "clickUrl": "全部分类",
+                           "itemTitle": "全部分类"
+                       }
+            ]
+        },
+        {
+            "itemType": "jdBulletin",
+            "module": "jdBulletin",
+            "itemContentList": [
+                {
+                    "clickUrl": "男装超品类日，跨店3件7折！",
+                    "itemTitle": "热",
+                    "itemSubTitle": "您好，欢迎使用了，666"
+                },
+                {
+                    "clickUrl": "运动大牌春季特惠，满800减100！",
+                    "itemTitle": "热",
+                    "itemSubTitle": "新年快乐，大吉大利，恭喜发财，666"
+                }
+            ]
+        },
+        {
+            "itemType": "pubuliu",
+            "module": "pubuliu",
+            "itemContentList": [
+                {
+                    "imageUrl": "http://file.juzimi.com/weibopic/jizlml6.jpg",
+                    "itemTitle": "杀敌者，怒也。取敌之利者，货也。"
+                },
+                {
+                    "imageUrl": "http://file.juzimi.com/weibopic/jozrmr2.jpg",
+                    "itemTitle": "我当初看上他 完全是脑子进水了 现在好不容易抖干了"
+                },
+                {
+                    "imageUrl": "http://file.juzimi.com/weibopic/jpzima4.jpg",
+                    "itemTitle": "如果爱一个人，千万不要与他同居或是结婚。维持一个辽阔的距离，偶遇，可以爱慕的目光致敬，轻俏温柔，不着边际地问：”好吗？”一年一次已经足够。"
+                },
+                {
+                    "imageUrl": "http://file.juzimi.com/weibopic/juzumd3.jpg",
+                    "itemTitle": "有人会因为我们的缺点而讨厌我们，但也会有人因为我们的真实而喜欢我们。我们不必让那些本不喜欢我们的人喜欢上自己，而是坚持让那些本该喜欢我们的人尽快发现自己。"
+                },
+                {
+                    "imageUrl": "http://file.juzimi.com/weibopic/jizpml6.jpg",
+                    "itemTitle": "那一世，我为花客，你为莲子，拘莲在手，一吻天荒。 那一世，我为烟雨，你为柳桑，一季迷离，月色苍茫。 那一世，我为江南，你为过客，青板油伞，白衣泱泱。 那一世，我为寒月，你为孤星，红尘岸边，两两相望。 那一世，我为楼台，你为高锁，酒醒帘幕，笙歌未央。 那一世，我为落花，你为佳人，微雨双燕，相思弦上。 那一世，我为红烛，你为剪影，窗影缠绵，共赴情长。 那一世，我为青笺，你为墨香，倩语轻笑，伴比鸳鸯。 那一世，我为玲珑，你为佩剑，缱绻此世，相守流浪。 那一世，我为公子，你为女子，倾城相遇，不诉离殇。by孟梓菲"
+                },
+                {
+                    "imageUrl": "http://file.juzimi.com/weibopic/jozomd.jpg",
+                    "itemTitle": "有些事情一旦被情绪包裹上锁生锈，外面的进不来，里面的也打不开。"
+                },
+                {
+                    "imageUrl": "http://file.juzimi.com/weibopic/jrzrme4.jpg",
+                    "itemTitle": "我听见了你的声音 也藏着颗不敢见的心 我躲进挑剔的人群 夜一深就找那颗星星"
+                },
+                {
+                    "imageUrl": "http://file.juzimi.com/weibopic/jozpml2.jpg",
+                    "itemTitle": "天之苍苍，地之茫茫，天寒地冻，风吹草黄。 天生我何，宿命无常，地养我何，世情悲凉。 鸿雁于飞，我行其旁，悠悠昊天，怜我其殇。 鸿雁哀哀，我心其亡，悠悠昊天，怜我其殇…"
+                },
+                {
+                    "imageUrl": "http://file.juzimi.com/weibopic/juzlme1.jpg",
+                    "itemTitle": "如果雪山能看见，如果命运能预知。 如果时光能倒退，如果岁月能重来。 那个过客，是否还能进入你的梦。 而你，是否愿意回头。"
+                },
+                {
+                    "imageUrl": "http://file.juzimi.com/weibopic/jozoma4.jpg",
+                    "itemTitle": "致2017的毕业季 你说，三年太短了，像这件穿了三年嫌弃了三年的校服一样，短了 闭上眼。 "
+                },
+                {
+                    "imageUrl": "http://file.juzimi.com/weibopic/jizlmp6.jpg",
+                    "itemTitle": "繁华落尽呈现倾城一笑。 初雪飘舞尘封孤身独影。"
+                },
+                {
+                    "imageUrl": "http://file.juzimi.com/weibopic/jlzimp7.jpg",
+                    "itemTitle": "信道而且行善者﹐我必定 勾销他们的罪恶﹐我必定以他们的行为的 最优的报酬赏赐他们。"
+                },
+                {
+                    "imageUrl": "http://file.juzimi.com/weibopic/jrzimx4.jpg",
+                    "itemTitle": "走来路上，一对小情侣拦住了我 女生站在前， 羞答答的问我：情侣酒店怎么走啊？ 我毫不犹豫地给他们指了指新华书店的方向 希望他们能在知识的海洋中找回迷失的自我"
+                },
+                {
+                    "imageUrl": "http://file.juzimi.com/weibopic/jazrmx4.jpg",
+                    "itemTitle": 不管你将来要什么，我死都会给你，绝不反悔！"
+                },
+                {
+                    "imageUrl": "http://file.juzimi.com/weibopic/jiziml1.jpg",
+                    "itemTitle": "现在这世道可不流行悲剧"
+                },
+                {
+                    "imageUrl": "http://file.juzimi.com/weibopic/jdzumo2.jpg",
+                    "itemTitle": "枕星河之倒影兮与星光同流，望群星之包覆兮随繁星同辉。"
+                },
+                {
+                    "imageUrl": "http://file.juzimi.com/weibopic/juzlmp6.jpg",
+                    "itemTitle": "爱情不是演戏，无需旁观者见证。 爱情不用太复杂，用心体会就好。"
+                },
+                {
+                    "imageUrl": "http://file.juzimi.com/weibopic/jxzpmr2.jpg",
+                    "itemTitle": "有一种沉默不叫无言以对，叫懒得理你"
+                },
+                {
+                    "imageUrl": "http://file.juzimi.com/weibopic/joziml4.jpg",
+                    "itemTitle": "我熬过了所有的苦难 我已经不期待和谁在一起了。"
+                }
+            ]
+        }
+    ]
+}

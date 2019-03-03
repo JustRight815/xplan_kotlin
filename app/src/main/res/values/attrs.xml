@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    // pull to refresh =================
+    <declare-styleable name="PtrFrameLayout">
+        <attr name="ptr_header" format="reference" />
+        <attr name="ptr_content" format="reference" />
+        <attr name="ptr_resistance" format="float" />
+        <attr name="ptr_ratio_of_header_height_to_refresh" format="float" />
+        <attr name="ptr_duration_to_close" format="integer" />
+        <attr name="ptr_duration_to_close_header" format="integer" />
+        <attr name="ptr_pull_to_fresh" format="boolean" />
+        <attr name="ptr_keep_header_when_refresh" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="PtrClassicHeader">
+        <attr name="ptr_rotate_ani_time" format="integer" />
+    </declare-styleable>
+    // pull to refresh =================
+
+    //up down viewSwitcher================
+    <declare-styleable name="UpDownViewSwitcher">
+        <attr name="up_to_down" format="boolean" />
+        <attr name="animator_duration" format="integer" />
+        <attr name="switch_duration" format="integer" />
+        <attr name="animator_translate_distance" format="dimension" />
+    </declare-styleable>
+
+    //auto scroll viewpager =====================
+    <declare-styleable name="BGABanner">
+        <!-- 指示点容器背景 -->
+        <attr name="banner_pointContainerBackground" format="reference|color" />
+        <!-- 指示点背景 -->
+        <attr name="banner_pointDrawable" format="reference" />
+        <!-- 指示点容器左右内间距 -->
+        <attr name="banner_pointContainerLeftRightPadding" format="dimension" />
+        <!-- 指示点上下外间距 -->
+        <attr name="banner_pointTopBottomMargin" format="dimension" />
+        <!-- 指示点左右外间距 -->
+        <attr name="banner_pointLeftRightMargin" format="dimension" />
+        <!-- 指示器的位置 -->
+        <attr name="banner_indicatorGravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_horizontal" value="0x01" />
+        </attr>
+        <!-- 是否开启自动轮播 -->
+        <attr name="banner_pointAutoPlayAble" format="boolean" />
+        <!-- 自动轮播的时间间隔 -->
+        <attr name="banner_pointAutoPlayInterval" format="integer" />
+        <!-- 页码切换过程的时间长度 -->
+        <attr name="banner_pageChangeDuration" format="integer" />
+        <!-- 页面切换的动画效果 -->
+        <attr name="banner_transitionEffect" format="enum">
+            <enum name="defaultEffect" value="0" />
+            <enum name="alpha" value="1" />
+            <enum name="rotate" value="2" />
+            <enum name="cube" value="3" />
+            <enum name="flip" value="4" />
+            <enum name="accordion" value="5" />
+            <enum name="zoomFade" value="6" />
+            <enum name="fade" value="7" />
+            <enum name="zoomCenter" value="8" />
+            <enum name="zoomStack" value="9" />
+            <enum name="stack" value="10" />
+            <enum name="depth" value="11" />
+            <enum name="zoom" value="12" />
+        </attr>
+        <!-- 提示文案的文字颜色 -->
+        <attr name="banner_tipTextColor" format="reference|color" />
+        <!-- 提示文案的文字大小 -->
+        <attr name="banner_tipTextSize" format="dimension" />
+        <!-- 加载网络数据时覆盖在 BGABanner 最上层的占位图 -->
+        <attr name="banner_placeholderDrawable" format="reference" />
+        <!-- 是否是数字指示器 -->
+        <attr name="banner_isNumberIndicator" format="boolean" />
+        <!-- 数字指示器文字颜色 -->
+        <attr name="banner_numberIndicatorTextColor" format="reference|color" />
+        <!-- 数字指示器文字大小 -->
+        <attr name="banner_numberIndicatorTextSize" format="dimension" />
+        <!-- 数字指示器背景 -->
+        <attr name="banner_numberIndicatorBackground" format="reference" />
+        <!-- 当只有一页数据时是否显示指示器，默认值为 false -->
+        <attr name="banner_isNeedShowIndicatorOnOnlyOnePage" format="boolean" />
+        <!-- 自动轮播区域距离 BGABanner 底部的距离 -->
+        <attr name="banner_contentBottomMargin" format="dimension" />
+        <!-- 支持宽高显示比例 -->
+        <attr name="banner_viewAspectRatio" format="float" />
+        <!-- 占位图缩放模式 -->
+        <attr name="android:scaleType" />
+    </declare-styleable>
+    //auto scroll viewpager =====================^^^^^^
+    //AspectRatioLayout=======================
+    <declare-styleable name="AspectRatioLayout">
+        <attr name="Layout_viewAspectRatio" format="float" />
+    </declare-styleable>
+
+    //percent layout attr
+    <declare-styleable name="PercentLayout_Layout">
+        <attr name="layout_widthPercent" format="fraction" />
+        <attr name="layout_heightPercent" format="fraction" />
+        <attr name="layout_marginPercent" format="fraction" />
+        <attr name="layout_marginLeftPercentX" format="fraction" />
+        <attr name="layout_marginLeftPercentY" format="fraction" />
+        <attr name="layout_marginLeftPercentScreenX" format="fraction" />
+        <attr name="layout_marginTopPercentX" format="fraction" />
+        <attr name="layout_marginTopPercentY" format="fraction" />
+        <attr name="layout_marginTopPercentScreenX" format="fraction" />
+        <attr name="layout_marginRightPercentX" format="fraction" />
+        <attr name="layout_marginRightPercentY" format="fraction" />
+        <attr name="layout_marginRightPercentScreenX" format="fraction" />
+        <attr name="layout_marginBottomPercentX" format="fraction" />
+        <attr name="layout_marginBottomPercentY" format="fraction" />
+        <attr name="layout_marginBottomPercentScreenX" format="fraction" />
+        <attr name="layout_marginStartPercent" format="fraction" />
+        <attr name="layout_marginEndPercent" format="fraction" />
+        <attr name="layout_aspectRatio" format="fraction" />
+        <attr name="layout_selfAspectRatio" format="float" />
+        <attr name="layout_widthTextSizePercent" format="fraction" />
+        <attr name="layout_screenWidthTextSizePercent" format="fraction" />
+        <attr name="layout_heightTextSizePercent" format="fraction" />
+    </declare-styleable>
+
+
+    <!-- StateView 使用 -->
+    <declare-styleable name="StateView">
+        <attr name="state_content" format="reference"/>
+        <attr name="state_error" format="reference"/>
+        <attr name="state_empty" format="reference"/>
+        <attr name="state_loading" format="reference"/>
+        <attr name="state_current" format="enum">
+            <enum name="content" value="0"/>
+            <enum name="loading" value="1"/>
+            <enum name="error" value="2"/>
+            <enum name="empty" value="3"/>
+            <enum name="content_loading" value="4"/>
+        </attr>
+    </declare-styleable>
+
+    <!--显示提示的View-->
+    <declare-styleable name="TipView">
+        <attr name="tipBackgroundColor" format="color"/>
+        <attr name="tipTextColor" format="color"/>
+        <attr name="tipText" format="string"/>
+        <attr name="tipTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="PowerfulRecyclerView">
+        <attr name="dividerColor" format="color"/>
+        <attr name="dividerSize" format="dimension"/>
+        <attr name="dividerDrawable" format="reference"/>
+        <attr name="useStaggerLayout" format="boolean"/>
+        <attr name="numColumns" format="integer"/>
+        <attr name="rvOrientation" format="enum">
+            <enum name="HORIZONTAL" value="0"/>
+            <enum name="VERTICAL" value="1"/>
+        </attr>
+        <attr name="dividerMarginLeft" format="dimension"/>
+        <attr name="dividerMarginRight" format="dimension"/>
+    </declare-styleable>
+
+    <!--拍摄视频进度按钮-->
+    <declare-styleable name="RecordedButton">
+        <attr name="zpb_radius" format="dimension" /><!--圆的半径-->
+        <attr name="stripeWidth" format="dimension" /><!--进度条宽度-->
+        <attr name="progressColor" format="color" /><!--进度颜色-->
+        <attr name="centerColor" format="color" /><!--中心颜色-->
+        <!--按钮背景颜色-->
+        <attr name="backgroundColor" format="color" />
+    </declare-styleable>
+    <!--首页菜单原点导航-->
+    <declare-styleable name="IndicatorView">
+        <attr name="indicatorColor" format="color"/>
+        <attr name="indicatorColorSelected" format="color"/>
+        <attr name="indicatorWidth" format="integer"/>
+        <attr name="gravity" format="integer"/>
+    </declare-styleable>
+</resources>

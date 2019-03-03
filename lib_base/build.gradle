@@ -1,0 +1,62 @@
+apply plugin: 'com.android.library'
+apply plugin: 'bugly'
+bugly {
+    appId = '0785b70a94' // 注册时分配的App ID
+    appKey = '3cb06959-1726-4840-9fed-3446c40639e9' // 注册时分配的App Key
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    api rootProject.ext.dependencies.appcompatV7
+    api rootProject.ext.dependencies.supportV4
+    api rootProject.ext.dependencies.supportV4
+
+
+    api project(':lib_skin')
+    //打印日志
+    api 'com.orhanobut:logger:2.1.1'
+    /*网络相关*/
+    api 'com.squareup.okhttp3:okhttp:3.9.1'
+    api 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    api 'com.squareup.retrofit2:retrofit:2.3.0'
+    api 'com.squareup.retrofit2:converter-scalars:2.3.0'//自动返回String
+    //rxjava
+    api "io.reactivex.rxjava2:rxjava:2.1.7"
+    api 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    //Json解析
+    api 'com.google.code.gson:gson:2.8.2'
+    // 图片缓存框架
+    api('com.github.bumptech.glide:glide:4.7.1') {
+        exclude group: "com.android.support"
+    }
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    //事件总线
+    api 'org.greenrobot:eventbus:3.0.0'
+    //BRVAH是一个强大的RecyclerAdapter框架
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40'
+    // StatusBarUtil 沉浸式状态栏
+    api ("com.jaeger.statusbarutil:library:1.4.0") {
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+
+    //添加leakcanary相关的依赖
+    //在release和test版本中，使用的是LeakCanary的no-op版本，也就是没有实际代码和操作的Wrapper版本，
+    // 只包含LeakCanary和RefWatcher类的空实现，这样不会对生成的APK包体积和应用性能造成影响
+    debugApi 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseApi 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    //腾讯Bugly 异常上报
+    api 'com.tencent.bugly:crashreport:latest.release'
+    api 'com.tencent.bugly:nativecrashreport:latest.release'
+}
+
+

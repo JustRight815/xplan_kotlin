@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 自定义圆角图片默认颜色设置-->
+    <color name="ml_white">#ffffffff</color>
+    <color name="ml_gray">#ff9e9e9e</color>
+    <color name="ml_blue">#ff239efe</color>
+    <color name="ml_red">#ffff0000</color>
+    <!-- bottombar-->
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="selector_grey">#DDDDDD</color>
+</resources>

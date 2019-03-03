@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryTrue"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/title_bar_back_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/title_bar_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:padding="13dp"
+                android:src="@drawable/selector_titlebar_back"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="match_parent"
+                android:background="@color/title_bar_line"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_toRightOf="@id/title_bar_back_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:maxWidth="224dp"
+            android:text="关于软件"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:maxEms="12"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="99dp"
+        android:text="X Plan\n       一个随意的demo"
+        android:textSize="18sp"
+        android:layout_below="@+id/titlebar"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/iv_qr_code"
+        android:layout_below="@id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_version_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:text="当前版本号:"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="2017年X月X日"
+        android:textSize="12sp" />
+
+
+
+
+</RelativeLayout>

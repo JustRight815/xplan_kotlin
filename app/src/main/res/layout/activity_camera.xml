@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/cameraLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#000000">
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/switchCameraBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/camera_revert2" />
+
+    <ImageView
+        android:id="@+id/flashBtn"
+        android:layout_toLeftOf="@id/switchCameraBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/cameraControlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="25dp"
+            android:clickable="true"
+            android:src="@drawable/camera_back"
+            android:layout_centerVertical="true"/>
+
+        <com.zh.xplan.ui.view.camera.RecordedButton
+            android:id="@+id/recordBtn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            app:backgroundColor="#ffffff"
+            app:centerColor="#FF5557"
+            app:progressColor="#2baefd"
+            app:stripeWidth="3dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvTouchShoot"
+        android:layout_above="@id/cameraControlLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="轻触拍照，长按摄像"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tvRecordMessage"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:padding="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/recordTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="00:30"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/camera_time_bg"/>
+
+
+    <RelativeLayout
+        android:id="@+id/cameraResultLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:background="#00ffffff"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgRecordRepleal"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/camera_repeal" />
+
+        <ImageView
+            android:id="@+id/imgRecordSave"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/camera_save" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

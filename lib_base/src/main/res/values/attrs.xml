@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- RoundImageView 圆角图片使用 -->
+    <declare-styleable name="RoundImageView">
+        <attr name="press_alpha" format="integer" />
+        <attr name="press_color" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="shape_type" format="enum">
+            <enum name="round" value="0" />
+            <enum name="rectangle" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="BottomBarItem">
+        <!--默认状态下的图标-->
+        <attr name="iconNormal" format="reference"/>
+        <!--选中状态下的图标-->
+        <attr name="iconSelected" format="reference"/>
+        <!--底部文字-->
+        <attr name="itemText" format="string"/>
+        <!--文字大小-->
+        <attr name="itemTextSize" format="dimension"/>
+        <!--默认状态下的文字颜色-->
+        <attr name="textColorNormal" format="color"/>
+        <!--选中状态下的文字颜色-->
+        <attr name="textColorSelected" format="color"/>
+        <!--文字和图标的顶部距离-->
+        <attr name="itemMarginTop" format="dimension"/>
+        <!--是否开启触摸背景效果-->
+        <attr name="openTouchBg" format="boolean"/>
+        <!--设置触摸背景-->
+        <attr name="touchDrawable" format="reference"/>
+        <!--设置图标的宽度-->
+        <attr name="iconWidth" format="dimension"/>
+        <!--设置图标的高度-->
+        <attr name="iconHeight" format="dimension"/>
+        <!--设置BottomBarItem的padding-->
+        <attr name="itemPadding" format="dimension"/>
+        <!--设置未读数字体大小-->
+        <attr name="unreadTextSize" format="dimension"/>
+        <!--设置提示消息字体大小-->
+        <attr name="msgTextSize" format="dimension"/>
+    </declare-styleable>
+</resources>

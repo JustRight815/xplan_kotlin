@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="10dp"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    skin:enable="true"
+    android:orientation="vertical">
+	
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="500dp"
+        android:maxWidth="500dp"
+        skin:enable="true"
+        skin:drawShadow="@color/bg_img_transparent"/>
+
+    <TextView
+        android:id="@+id/id_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left" 
+        android:textSize="14sp"
+        skin:enable="true"
+        android:textColor="@color/text_color_black"
+        tools:text="描述描述描述描述描述描述"/>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    >
+
+    <LinearLayout
+        android:layout_width="18dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/v_short_line"
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:background="#E6E6E6" />
+
+        <ImageView
+            android:id="@+id/iv_new"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logistics_new" />
+
+        <ImageView
+            android:id="@+id/iv_old"
+            android:layout_width="11dp"
+            android:layout_height="11dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logistics_shape_gray_circle"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/v_long_line"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="#E6E6E6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="11dp">
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#18C289"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#18C289"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/v_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E6E6E6" />
+    </LinearLayout>
+</LinearLayout>

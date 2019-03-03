@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:background="@color/bg_color_white"
+    skin:enable="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/activity_mian_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<android.support.design.widget.NavigationView-->
+        <!--android:id="@+id/nav_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="start"-->
+        <!--skin:enable="true"-->
+        <!--app:headerLayout="@layout/activity_main_nav"-->
+        <!--/>-->
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        skin:enable="true"
+        android:background="@color/bg_color_white"
+        android:layout_gravity="start">
+        <include
+            layout="@layout/activity_main_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </ScrollView>
+</android.support.v4.widget.DrawerLayout>

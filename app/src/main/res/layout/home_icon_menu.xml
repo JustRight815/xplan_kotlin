@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    skin:enable="true">
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/home_entrance"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_home_entrance_vp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.zh.xplan.ui.menupicture.widget.IndicatorView
+            android:id="@+id/main_home_entrance_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:gravity="0"
+            app:indicatorColor="#668b8989"
+            app:indicatorColorSelected="#FF5722"
+            app:indicatorWidth="6" />
+    </LinearLayout>
+</RelativeLayout>

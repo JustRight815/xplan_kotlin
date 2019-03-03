@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    skin:enable="true"
+    android:background="@color/bg_color_white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/title_bar" />
+
+    <com.zh.xplan.ui.view.stateiew.StateView
+        android:layout_below="@id/titlebar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:state_current="content"
+        app:state_empty="@layout/stateview_empty_view"
+        app:state_error="@layout/stateview_error_net_view"
+        app:state_loading="@layout/stateview_loading_view" >
+
+        <com.zh.xplan.ui.view.pulltorefresh.customheader.PullToRefreshLayout
+            android:id="@+id/rotate_header_list_view_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                skin:enable="true"
+                skin:clearRecyclerView="true"
+                android:scrollbars="none" />
+
+        </com.zh.xplan.ui.view.pulltorefresh.customheader.PullToRefreshLayout>
+
+    </com.zh.xplan.ui.view.stateiew.StateView>
+
+    <Button
+        android:id="@+id/btn_top"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/to_top"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,149 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.getkeepsafe.dexcount' // 方法个数统计
+apply plugin: 'AndResGuard'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+//apply plugin: 'kotlin-kapt'//hotchemi:permissionsdispatcher 支持kotlin
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        //gsyvideoplayer 默认兼容到16   强制覆盖<uses-sdk tools:overrideLibrary="com.shuyu.gsyvideoplayer.lib,com.shuyu.gsyvideoplayer,tv.danmaku.ijk.media.exo2,com.google.android.exoplayer2.ext.rtmp,com.shuyu.gsyvideoplayer.ex_so,shuyu.com.androidvideocache,net.butterflytv.rtmp_client"/>
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        // 指定要ndk需要兼容的架构(这样其他依赖包里mips,x86,armeabi,arm-v8之类的so会被过滤掉)
+        //不指定的话zbar总是找不到so
+        ndk {
+            abiFilters  "armeabi"// ,'armeabi-v7a' , 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        multiDexEnabled true  //transformDexArchiveWithExternalLibsDexMergerForDebug unable to merge dex 问题
+        resConfigs "zh" //app瘦身 只支持中文，不支持国际化
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    buildTypes {
+        debug {
+            //混淆
+            minifyEnabled false
+            shrinkResources false //前提是minifyEnabled为true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            //混淆
+            minifyEnabled true
+            shrinkResources false //前提是minifyEnabled为true  设置为true 有风险
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //解决签名打包时 Error:(4) Error: "ssdk_instapager_login_html" is not translated in "en" (English) [MissingTranslation]
+    lintOptions{
+        checkReleaseBuilds false
+        //执行lint检查，有任何的错误或者警告提示，都会终止构建，我们可以将其关掉。
+        abortOnError false
+    }
+
+    //如果报 Cannot merge new index 65562 into a non-jumbo instruction! 这个问题则很容易解决，直接修改build.gradle，清理项目后重新sync编译
+    dexOptions {
+        jumboMode = true
+    }
+
+}
+
+//transformDexArchiveWithExternalLibsDexMergerForDebug' — Unable to merge dex
+// 有的时候引入了多个三方库.在调用的时候会出现版本对应不上的原因,需要强制版本号统一
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '28.0.0'
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/tbs_sdk_thirdapp_v3.6.0.1315_43612.jar')
+    implementation project(':lib_base')
+    implementation project(':lib_swipeback')
+    implementation 'com.android.support:multidex:1.0.3'
+    //HTML解析
+    implementation 'org.jsoup:jsoup:1.11.3'
+    // 图片浏览器 放大缩小图片
+    implementation 'com.github.chrisbanes:PhotoView:2.1.4'
+    // 基于ijkplayer的视频播放器
+    //    compile 'com.shuyu:GSYVideoPlayer:2.0.8'
+    implementation 'com.shuyu:gsyVideoPlayer-java:3.0.0'
+    implementation 'com.shuyu:gsyVideoPlayer-armv5:3.0.0'
+    // 滑动返回界面
+    // 动态权限处理 放到common里会报错
+    implementation 'com.github.hotchemi:permissionsdispatcher:2.4.0'
+    annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:2.4.0"
+    // tab
+    implementation 'me.weyye.ColorTrackTabLayout:library:1.0.1'
+    implementation 'org.litepal.android:core:1.5.0'
+    //Facebook Spring动画库
+    implementation 'com.facebook.rebound:rebound:0.3.8'
+    //桌面消息角标 https://github.com/leolin310148/ShortcutBadger
+    implementation "me.leolin:ShortcutBadger:1.1.21@aar"
+    // kotlin使用
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.41"
+}
+
+andResGuard {
+    // mappingFile = file("./resource_mapping.txt")
+    mappingFile = null
+    use7zip = true
+    useSign = true
+    // 打开这个开关，会keep住所有资源的原始路径，只混淆资源的名字
+    keepRoot = false
+    whiteList = [
+            // for your icon
+            "R.drawable.icon",
+            // for fabric
+            "R.string.com.crashlytics.*",
+            // for google-services
+            "R.string.google_app_id",
+            "R.string.gcm_defaultSenderId",
+            "R.string.default_web_client_id",
+            "R.string.ga_trackingId",
+            "R.string.firebase_database_url",
+            "R.string.google_api_key",
+            "R.string.google_crash_reporting_api_key"
+    ]
+    compressFilePattern = [
+            "*.png",
+            "*.jpg",
+            "*.jpeg",
+            "*.gif",
+    ]
+    sevenzip {
+        artifact = 'com.tencent.mm:SevenZip:1.2.12'
+        //path = "/usr/local/bin/7za"
+    }
+
+    /**
+     * 可选： 如果不设置则会默认覆盖assemble输出的apk
+     **/
+    // finalApkBackupPath = "${project.rootDir}/final.apk"
+
+    /**
+     * 可选: 指定v1签名时生成jar文件的摘要算法
+     * 默认值为“SHA-1”
+     **/
+    // digestalg = "SHA-256"
+}

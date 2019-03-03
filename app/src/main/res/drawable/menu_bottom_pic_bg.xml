@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 选中 -->
+    <item android:drawable="@drawable/menu_pic_pre" android:state_checked="true"></item>
+    <!-- 按下 -->
+    <item android:drawable="@drawable/menu_pic_pre" android:state_pressed="true"></item>
+    <!-- 抬起 -->
+    <item android:drawable="@drawable/menu_pic" android:state_pressed="false"></item>
+
+</selector>

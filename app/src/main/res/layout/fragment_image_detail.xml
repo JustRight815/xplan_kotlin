@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/PhotoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/tv_page_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/scrollView"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:text="3/20"
+        android:visibility="gone"
+        android:padding="5dp"
+        android:background="#22000000"
+        android:layout_marginBottom="2dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:background="#22000000"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true" >
+
+        <TextView
+            android:id="@+id/introduction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:padding="10dp"
+            android:text="图片文字"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/pb_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
