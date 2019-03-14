@@ -1,7 +1,8 @@
 # xplan_kotlin
 个人业余练习的一个小应用。目的想练习一些主流开源项目的使用，搞一些自己感兴趣但是没有做过的东西，最近一年多比较忙，业余做的功能也少了，xplan借鉴了很多开源项目，所以想开源出来。  
   
-  **本项目仅做学习使用，谨慎用于实际项目，拒绝用于商业用途，数据均属于非正常渠道获取，原创公司拥有所有权利。**  
+  **本项目仅做学习使用，谨慎用于实际项目，拒绝用于商业用途，数据均属于非正常渠道获取，原创公司拥有所有权利。**    
+ 
     
   **效果预览：**     
  ![XPlan](https://github.com/JustRight815/xplan_kotlin/blob/master/screenshot/picture.png) 
@@ -31,7 +32,9 @@
  16、今日头条适配屏幕方案  
  14、zing和zbar结合扫描二维码  
  15、X5 webviw使用，原生webview防止内存泄露和漏洞  
- 16、app字体不随系统字体大小改变  
+ 16、app字体不随系统字体大小改变    
+ 
+  **欢迎大家提issues ，喜欢就拿去用，感兴趣就star**    
   
    开源项目使用：  
     Retrofit + OkHttp + Gson + glide 
@@ -43,5 +46,6 @@
     [bga-swipebacklayout 滑动返回](https://github.com/bingoogolapple/BGASwipeBackLayout-Android)   
     [logger 日志](https://github.com/orhanobut/logger)   
     
+
     
   
