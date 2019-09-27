@@ -1,4 +1,8 @@
 # xplan_kotlin
+此项目停止更新，转移到新的项目：  
+native/flutter混合开发版本：https://github.com/JustRight815/xplan_native_flutter   
+纯flutter版本：https://github.com/JustRight815/xplan_flutter_module
+
 个人业余练习的一个小应用。目的想练习一些主流开源项目的使用，搞一些自己感兴趣但是没有做过的东西，最近一年多比较忙，业余做的功能也少了，xplan借鉴了很多开源项目，所以想开源出来。  
   
   **本项目仅做学习使用，谨慎用于实际项目，拒绝用于商业用途，数据均属于非正常渠道获取，原创公司拥有所有权利。**    
